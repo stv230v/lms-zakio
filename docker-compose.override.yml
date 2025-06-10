@@ -1,0 +1,10 @@
+services:
+  frontend:
+    ports:
+      - '3000:3000' # ホストの3000番ポートをコンテナの3000番ポートにマッピング
+    volumes:
+      - ./frontend:/usr/src/app # ホストのソースコードをコンテナにマウント (ホットリロード用)
+      - /usr/src/app/node_modules # node_modules はコンテナ内のものを使用
+    environment:
+      - NODE_ENV=development # 開発モードを指定
+      - WATCHPACK_POLLING=true # Docker環境でのホットリロード安定化のため
