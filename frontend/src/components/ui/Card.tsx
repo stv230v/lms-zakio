@@ -1,5 +1,6 @@
 import ModalBase from "@/components/ui/modal-base";
 
+// Modalはクリックしたときに後ろが灰色になるような感じ
 export default function LessonCard({
   setSearching,
 }: {
