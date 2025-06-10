@@ -1,7 +1,8 @@
+import { LessonButton } from '@/components/ui/Button';
 export default function Home() {
-  return (
-    <div>
-      <h1>HelloWorld</h1>
-    </div>
-  );
+	return (
+		<div>
+			<LessonButton />
+		</div>
+	);
 }
