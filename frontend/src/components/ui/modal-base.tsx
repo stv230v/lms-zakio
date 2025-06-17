@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
+import { LessonCard } from "./Card";
 
 export default function Modal({
   isOpenModal,
@@ -48,29 +49,7 @@ export default function Modal({
             ref={modalRef}
           >
             {/* ここにモーダルの中身 */}
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              プログラミング実習
-            </h2>
-
-            {/* 第1回セクション */}
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold mb-2">第1回</h3>
-              <p className="text-lg font-medium mb-4">プログラミングの基本</p>
-              <ul className="list-none space-y-2">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                  <span className="text-gray-700">VS コードセットアップ</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                  <span className="text-gray-700">言語について</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                  <span className="text-gray-700">コードの特性について</span>
-                </li>
-              </ul>
-            </div>
+            <LessonCard />
           </div>
         </div>
       )}
