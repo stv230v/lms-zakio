@@ -37,3 +37,14 @@ export function LessonCard() {
     </div>
   );
 }
+
+export function ImportArea() {
+  return (
+    <div>
+      <input
+        type="text"
+        className=" border border-blue-300 placeholder: 文字を入力"
+      ></input>
+    </div>
+  );
+}
